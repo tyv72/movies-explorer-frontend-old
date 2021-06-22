@@ -14,6 +14,7 @@ import Profile from '../Profile/Profile';
 import SavedMovies from '../SavedMovies/SavedMovies';
 
 function App() {
+  const loggedIn = false;
   return (
     <div className="App">
       <Switch>
@@ -44,8 +45,8 @@ function App() {
           <Footer />
         </Route>
         <Route path='/'>
-          <Header loggedIn={true}>
-            <Navigation loggedIn={true}/>
+          <Header loggedIn={false}>
+            <Navigation loggedIn={false}/>
           </Header>
           <Main />
           <Footer />
